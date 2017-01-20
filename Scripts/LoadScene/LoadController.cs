@@ -15,10 +15,7 @@ public class LoadController : MonoBehaviour {
 		Invoke("jumpToStart",3);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 	void jumpToStart(){
 		SceneManager.LoadScene ("start");
 	}
