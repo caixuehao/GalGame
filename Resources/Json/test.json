@@ -1,0 +1,56 @@
+{
+  "startTag": 0,
+  "eventList": [
+    {
+      "tag": 0,
+      "type": 0,
+      "characters": [
+        "0-4"
+      ],
+      "background": "bg-street.png",
+      "textList": [
+        "333333333",
+        "222222"
+      ],
+      "options": [
+        {
+          "text": "选项1",
+          "tag": 1
+        },
+        {
+          "text": "选项1",
+          "tag": 2
+        }
+      ],
+      "next": -1
+    },
+    {
+      "tag": 1,
+      "type": -1,
+      "character": [
+        "0-4"
+      ],
+      "background": "bg-street",
+      "textList": [
+        "333333333",
+        "222222"
+      ],
+      "option": [],
+      "next": -1
+    },
+    {
+      "tag": 2,
+      "type": -1,
+      "character": [
+        "0-4"
+      ],
+      "background": "bg-street",
+      "textList": [
+        "333333333",
+        "222222"
+      ],
+      "option": [],
+      "next": -1
+    }
+  ]
+}
