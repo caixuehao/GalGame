@@ -17,7 +17,7 @@ public class GameEventEntity
 	};
 
 	public int tag;
-	public int type;
+	public EventType type;
 	public string[] characters;
 	public string background;
 	public string[] textList;

@@ -3,11 +3,11 @@
   "eventList": [
     {
       "tag": 0,
-      "type": 0,
+      "type": 1,
       "characters": [
         "0-4"
       ],
-      "background": "bg-street.png",
+      "background": "bg-street",
       "textList": [
         "333333333",
         "222222"
@@ -22,7 +22,7 @@
           "tag": 2
         }
       ],
-      "next": -1
+      "nextTag": -1
     },
     {
       "tag": 1,
@@ -36,7 +36,7 @@
         "222222"
       ],
       "option": [],
-      "next": -1
+      "nextTag": -1
     },
     {
       "tag": 2,
@@ -50,7 +50,7 @@
         "222222"
       ],
       "option": [],
-      "next": -1
+      "nextTag": -1
     }
   ]
 }
