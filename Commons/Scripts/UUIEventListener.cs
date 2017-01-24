@@ -18,7 +18,9 @@ IMoveHandler
 {  
 	public delegate void VoidDelegate(GameObject go);  
 	public delegate void EventDateDelegate(PointerEventData eventData);
+	public delegate void TagDelegate(int tag);
 	public EventDateDelegate onClick;  
+	public TagDelegate onClickTag;
 // public VoidDelegate onClick;  
 	public VoidDelegate onDown;  
 	public VoidDelegate onEnter;  
@@ -36,8 +38,12 @@ IMoveHandler
 	public VoidDelegate onMove;  
 
 	public object parameter;  
+	public int tagInt;
 
-	public void OnPointerClick(PointerEventData eventData) { if (onClick != null) onClick(eventData); }  
+	public void OnPointerClick(PointerEventData eventData) { 
+		if (onClick != null) onClick(eventData);
+		if (onClickTag != null) onClickTag(tagInt);
+	}  
 	public void OnPointerDown(PointerEventData eventData) { if (onDown != null) onDown(gameObject); }  
 	public void OnPointerEnter(PointerEventData eventData) { if (onEnter != null) onEnter(gameObject); }  
 	public void OnPointerExit(PointerEventData eventData) { if (onExit != null) onExit(gameObject); }  
@@ -51,10 +57,20 @@ IMoveHandler
 	public void OnScroll(PointerEventData eventData) { if (onScroll != null) onScroll(gameObject); }  
 	public void OnMove(AxisEventData eventData) { if (onMove != null) onMove(gameObject); }  
 
+
+
 	static public UUIEventListener Get(GameObject go)  
 	{  
 		UUIEventListener listener = go.GetComponent<UUIEventListener>();  
 		if (listener == null) listener = go.AddComponent<UUIEventListener>();
 		return listener;  
 	}  
+	static public UUIEventListener Get(GameObject go,int tag_)  
+	{  
+		UUIEventListener listener = go.GetComponent<UUIEventListener>();  
+		if (listener == null) listener = go.AddComponent<UUIEventListener>();
+		listener.tagInt = tag_;
+		return listener;
+
+	} 
 }  

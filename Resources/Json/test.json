@@ -4,53 +4,111 @@
     {
       "tag": 0,
       "type": 1,
-      "characters": [
-        "0-4"
-      ],
+      "characters": [],
       "background": "bg-street",
       "textList": [
-        "333333333",
-        "222222"
+        "我：zzzZZZ",
+        "我：嗯？又把选修课睡过去了？晚上没课直接回家吧",
+        "【今天怎么回家】"
       ],
       "options": [
         {
-          "text": "选项1",
+          "text": "走回家",
           "tag": 1
         },
         {
-          "text": "选项1",
-          "tag": 2
+          "text": "乘地铁",
+          "tag": 4
         }
-      ],
-      "nextTag": -1
+      ]
     },
     {
       "tag": 1,
-      "type": -1,
-      "character": [
-        "0-4"
-      ],
+      "type": 2,
+      "characters": [],
       "background": "bg-street",
       "textList": [
-        "333333333",
-        "222222"
+        "正值春天，沿路的樱花树的确让人感到惬意"
       ],
       "option": [],
-      "nextTag": -1
+      "nextTag": 2
     },
     {
       "tag": 2,
-      "type": -1,
-      "character": [
-        "0-4"
+      "type": 1,
+      "characters": [
+        "0-1"
       ],
       "background": "bg-street",
       "textList": [
-        "333333333",
-        "222222"
+        "这时候，一个身影吸引住了你的眼球",
+        "【好萌的妹子要上去勾搭吗？】"
       ],
-      "option": [],
-      "nextTag": -1
+      "options": [
+        {
+          "text": "二话不说马上去",
+          "tag": 3
+        }
+      ],
+      "nextTag": 3
+    },
+    {
+      "tag": 3,
+      "type": -1,
+      "characters": [
+        "0-1"
+      ],
+      "background": "bg-street",
+      "textList": [
+        "当你踏出右脚时，脑壳被秒速五公里的樱花击中了。",
+        "在医院一趟就是30年，真是可喜可贺。"
+      ],
+      "options": [],
+      "endTag": 0
+    },
+    {
+      "tag": 4,
+      "type": 2,
+      "characters": [],
+      "background": "bg-subway-station",
+      "textList": [
+        "还没到社畜回家的时间，这时候地铁站台人还不算多"
+      ],
+      "options": [],
+      "nextTag": 5
+    },
+    {
+      "tag": 5,
+      "type": 1,
+      "characters": [
+        "0-4"
+      ],
+      "background": "bg-subway-station",
+      "textList": [
+        "前方站着一个目测不到一米5的33娘，正认真地看着线路指示牌",
+        "【我：好萌的妹子啊，要上去勾搭吗？】"
+      ],
+      "options": [
+        {
+          "text": "二话不说马上去",
+          "tag": 6
+        }
+      ],
+      "nextTag": 5
+    },
+    {
+      "tag": 6,
+      "type": -1,
+      "characters": [],
+      "background": "bg-subway-station",
+      "textList": [
+        "虽然你做反了了方向，但你还是跟着她上了那趟地铁。",
+        "就在她下车的时候，上班族也蜂拥而至，把你挤在车厢的角落。",
+        "然后你遭打了二向箔打击",
+        "以后你只能充气才能出门，真是可喜可贺"
+      ],
+      "options": [],
+      "endTag": 1
     }
   ]
 }

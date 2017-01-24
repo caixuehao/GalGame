@@ -25,9 +25,9 @@ public class GameEventEntity
 	public Option[] options;
 
 	public int nextTag;
-	public GameEventEntity ()
-	{
-	}
+
+	public int endTag;
+
 }
 
 
